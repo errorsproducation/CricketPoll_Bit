@@ -1,10 +1,14 @@
 import 'package:apiauth/Auth/LoginPage.dart';
 import 'package:apiauth/Pages/Dashboard.dart';
+import 'package:apiauth/Pages/Splash_Screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
-  runApp(MaterialApp(home: const MyApp()));
+  runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -19,18 +23,23 @@ class MyApp extends StatelessWidget {
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body:  FutureBuilder(
-        future: _checkLoginStatus(),
-        builder: (context, snapshot) {
-          if(snapshot.data==true){
-            return Dashboard();
-          }
-          else{
-            return LoginPage();
-          }
-        },
-      ),
+    return ScreenUtilInit(
+      designSize:  const Size(375, 812),
+      builder: (context, child) {
+        return Scaffold(
+          body:  FutureBuilder(
+            future: _checkLoginStatus(),
+            builder: (context, snapshot) {
+              if(snapshot.data==true){
+                return Splash_Screen();
+              }
+              else{
+                return LoginPage();
+              }
+            },
+          ),
+        );
+      },
     );
   }
 }
