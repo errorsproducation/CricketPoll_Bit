@@ -56,6 +56,9 @@ class _OnBoard_1State extends State<OnBoard_1> {
                   width: 363.w,
                   height: 363.h,
                   decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Color(0xffFFF6A3),Color(0xffF96E20)],
+                    ),
                     image: DecorationImage(image: AssetImage('assets/elipse_onboard1_1.png'),
                       fit: BoxFit.fill,),
                   ),
