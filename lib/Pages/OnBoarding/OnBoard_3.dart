@@ -1,3 +1,4 @@
+import 'package:apiauth/Navigator/Bottom_Navigator.dart';
 import 'package:apiauth/Pages/Dashboard.dart';
 import 'package:apiauth/Pages/Keep_Searching.dart';
 import 'package:flutter/material.dart';
@@ -88,7 +89,7 @@ class _OnBoard_3State extends State<OnBoard_3> {
                           alignment: Alignment.centerLeft,
                           child: InkWell(
                             onTap: () {
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Keep_Searching(),));
+                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Bottom_Navigator(),));
                             },
                             child: Container(
                               width: 189.w,
@@ -108,7 +109,7 @@ class _OnBoard_3State extends State<OnBoard_3> {
                               ),
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

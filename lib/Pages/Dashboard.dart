@@ -14,7 +14,6 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      
       child: AnnotatedRegion(
         value: const SystemUiOverlayStyle(
           statusBarColor: Color(0xff1E2541),
