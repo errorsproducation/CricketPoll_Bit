@@ -158,7 +158,6 @@ class _Keep_SearchingState extends State<Keep_Searching> {
                               5,
                               0.0,
                             ),
-              
                           ),
                      ],
                       ),

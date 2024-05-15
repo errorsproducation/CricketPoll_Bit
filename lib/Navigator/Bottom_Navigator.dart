@@ -1,6 +1,6 @@
 import 'package:apiauth/Pages/Dashboard.dart';
 import 'package:apiauth/Pages/Keep_Searching.dart';
-import 'package:apiauth/Pages/MyBets_Screen.dart';
+import 'package:apiauth/Pages/MyBets/MyBets_Screen.dart';
 import 'package:apiauth/Pages/News/News_Screen.dart';
 import 'package:apiauth/Pages/Profile_Screen.dart';
 import 'package:flutter/material.dart';
