@@ -2,7 +2,7 @@ import 'package:apiauth/Pages/Dashboard.dart';
 import 'package:apiauth/Pages/Keep_Searching.dart';
 import 'package:apiauth/Pages/MyBets/MyBets_Screen.dart';
 import 'package:apiauth/Pages/News/News_Screen.dart';
-import 'package:apiauth/Pages/Profile_Screen.dart';
+import 'package:apiauth/Pages/Profile/Profile_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
