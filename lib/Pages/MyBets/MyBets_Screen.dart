@@ -178,13 +178,13 @@ class _MyBets_ScreenState extends State<MyBets_Screen> {
                                         height: 10,
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          color: Color(0xff56BA54),
+                                          color: LIVE_VISIBLE?Color(0xff56BA54):Color(0xff868E95),
                                         ),
                                       ),
                                       SizedBox(width: 10,),
                                       Text("Live",
                                         style:  GoogleFonts.montserrat(
-                                          color: Color(0xffEEF1F6),
+                                          color: LIVE_VISIBLE?Colors.white:Color(0xff868E95),
                                           fontSize: 20.sp,
                                           fontStyle: FontStyle.italic,
                                           fontWeight: FontWeight.w700,
@@ -212,7 +212,7 @@ class _MyBets_ScreenState extends State<MyBets_Screen> {
                               height: 40.h,
                               child: Text("Won",
                                 style:  GoogleFonts.montserrat(
-                                  color: Color(0xff868E95),
+                                  color: WON_VISIBLE?Colors.white:Color(0xff868E95),
                                   fontSize: 20.sp,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w700,
@@ -236,7 +236,7 @@ class _MyBets_ScreenState extends State<MyBets_Screen> {
                               height: 40.h,
                               child: Text("Looses",
                                 style:  GoogleFonts.montserrat(
-                                  color: Color(0xff868E95),
+                                  color: LOOSES_VISIBLE?Colors.white:Color(0xff868E95),
                                   fontSize: 20.sp,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w700,
