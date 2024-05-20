@@ -1,5 +1,5 @@
 import 'package:apiauth/Auth/LoginPage.dart';
-import 'package:apiauth/Pages/Dashboard.dart';
+import 'package:apiauth/Pages/DashBoard/Dashboard.dart';
 import 'package:apiauth/Pages/Splash_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

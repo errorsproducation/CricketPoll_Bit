@@ -1,5 +1,5 @@
 import 'package:apiauth/Navigator/Bottom_Navigator.dart';
-import 'package:apiauth/Pages/Dashboard.dart';
+import 'package:apiauth/Pages/DashBoard/Dashboard.dart';
 import 'package:apiauth/Pages/Keep_Searching.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

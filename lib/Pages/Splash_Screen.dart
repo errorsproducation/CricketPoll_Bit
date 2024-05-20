@@ -1,4 +1,4 @@
-import 'package:apiauth/Pages/Dashboard.dart';
+import 'package:apiauth/Pages/DashBoard/Dashboard.dart';
 import 'package:apiauth/Pages/OnBoarding/OnBoard_1.dart';
 import 'package:flutter/material.dart';
 

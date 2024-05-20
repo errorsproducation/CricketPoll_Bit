@@ -1,3 +1,4 @@
+import 'package:apiauth/Pages/Your_Wallet/Your_Wallet_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -70,13 +71,18 @@ class _DashboardState extends State<Dashboard> {
                                 ),
                               ),
 
-                              Container(
-                                width: 30.w,
-                                height: 30.h,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        "assets/Wallet.png"
+                              InkWell(
+                                onTap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Your_Wallet_Page()));
+                                },
+                                child: Container(
+                                  width: 30.w,
+                                  height: 30.h,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          "assets/Wallet.png"
+                                      ),
                                     ),
                                   ),
                                 ),
