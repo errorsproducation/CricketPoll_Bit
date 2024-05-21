@@ -1,3 +1,4 @@
+import 'package:apiauth/Pages/MyBets/Tabs_MyBids/MyBet_live.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,9 +13,7 @@ class Tab_Live extends StatefulWidget {
 class _Tab_LiveState extends State<Tab_Live> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.transparent,
-      body: Column(
+    return Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -206,24 +205,29 @@ class _Tab_LiveState extends State<Tab_Live> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        width: 72.w,
-                        height: 28.h,
-                        child: Center(
-                          child: Text("₹45",
-                            style:  GoogleFonts.roboto(
-                              color: Color(0xff6A6B7C),
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w600,
+                      InkWell(
+                        onTap:(){
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Mybets_Live()));
+            },
+                        child: Container(
+                          width: 72.w,
+                          height: 28.h,
+                          child: Center(
+                            child: Text("₹45",
+                              style:  GoogleFonts.roboto(
+                                color: Color(0xff6A6B7C),
+                                fontSize: 14.sp,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
-                        ),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(6),
-                            border: Border.all(
-                              width: 1,
-                              color: Color(0xff272E46),
-                            )
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(6),
+                              border: Border.all(
+                                width: 1,
+                                color: Color(0xff272E46),
+                              )
+                          ),
                         ),
                       ),
 
@@ -478,24 +482,29 @@ class _Tab_LiveState extends State<Tab_Live> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        width: 72.w,
-                        height: 28.h,
-                        child: Center(
-                          child: Text("₹45",
-                            style:  GoogleFonts.roboto(
-                              color: Color(0xff6A6B7C),
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w600,
+                      InkWell(
+                        onTap:(){
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Mybets_Live()));
+            },
+                        child: Container(
+                          width: 72.w,
+                          height: 28.h,
+                          child: Center(
+                            child: Text("₹45",
+                              style:  GoogleFonts.roboto(
+                                color: Color(0xff6A6B7C),
+                                fontSize: 14.sp,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
-                        ),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(6),
-                            border: Border.all(
-                              width: 1,
-                              color: Color(0xff272E46),
-                            )
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(6),
+                              border: Border.all(
+                                width: 1,
+                                color: Color(0xff272E46),
+                              )
+                          ),
                         ),
                       ),
 
@@ -573,7 +582,6 @@ class _Tab_LiveState extends State<Tab_Live> {
             ),
           ),
         ],
-      ),
-    );
+      );
   }
 }

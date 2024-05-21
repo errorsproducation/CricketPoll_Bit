@@ -1,4 +1,4 @@
-import 'package:apiauth/Pages/Your_Wallet/Your_Wallet_Page.dart';
+import 'package:apiauth/Pages/Your_Wallet/Screens/Your_Wallet_Page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

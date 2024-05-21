@@ -1,8 +1,9 @@
+import 'package:apiauth/Pages/Your_Wallet/Screens/Add_Balance.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'List_Recently_Transactions.dart';
+import '../List_Recently_Transactions.dart';
 
 class Your_Wallet_Page extends StatefulWidget {
   const Your_Wallet_Page({super.key});
@@ -218,34 +219,39 @@ class _Your_Wallet_PageState extends State<Your_Wallet_Page> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
             
-                            Container(
-                              width: 109.5.w,
-                              height: 32.h,
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    size: 17.21,
-                                      color: Colors.white,
-                                      Icons.add,
-                                  ),
-                                  Text("Add Balance",
-                                    style:  GoogleFonts.roboto(
-                                      color: Colors.white,
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w600,
+                            InkWell(
+                              onTap:(){
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Add_Balance()));
+                      },
+                              child: Container(
+                                width: 109.5.w,
+                                height: 32.h,
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Icon(
+                                      size: 17.21,
+                                        color: Colors.white,
+                                        Icons.add,
                                     ),
+                                    Text("Add Balance",
+                                      style:  GoogleFonts.roboto(
+                                        color: Colors.white,
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [Color(0xffF0875F),Color(0xffA02401)],
                                   ),
-                                ],
-                              ),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(8),
-                               
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [Color(0xffF0875F),Color(0xffA02401)],
                                 ),
                               ),
                             ),
@@ -384,7 +390,7 @@ class _Your_Wallet_PageState extends State<Your_Wallet_Page> {
                         blurRadius: 33, // Blur radius
                         spreadRadius: -50, // Spread radius
                       ),
-                      ]
+                      ],
                     ),
                   ),
                 ),
